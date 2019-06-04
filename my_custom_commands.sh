@@ -8,6 +8,6 @@ jupyter notebook
 
 # enable youtube for a number of minutes
 function wake_youtube() {
-sudo python3.6 .custom_python_commands/wake_youtube.py $1 
+sudo python3.6 ~/.custom_commands/custom_python_commands/wake_youtube.py $1 
 
 }
