@@ -1,7 +1,7 @@
 import time
 import sys
 
-WAIT_BEFORE_WAKING = 5
+WAIT_BEFORE_WAKING = 3
 # import os
 
 # def get_pid_of_chrome_tabs():
@@ -15,8 +15,8 @@ with open('/etc/hosts', 'r') as f:
     hosts_text = f.read()
 
 # wait 5 minutes before doing anything:
-time.sleep(WAIT_BEFORE_WAKING * 60)
 print('opening youtube in ' + str(WAIT_BEFORE_WAKING) + ' minutes')
+time.sleep(WAIT_BEFORE_WAKING * 60)
 
 # make the line blocking youtube into a comment:
 hosts_text_new = hosts_text.replace('127.0.0.1\twww.youtube', '# 127.0.0.1\twww.youtube')
